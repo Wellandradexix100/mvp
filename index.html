@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editora da Verinha- Publicações de Qualidade</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Editora da Verinha</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#livros">Livros</a></li>
+            <li><a href="#autores">Autores</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="search-cart">
+          <div class="search-box">
+            <input type="text" placeholder="Buscar livros..." />
+            <button title="Buscar"><i class="fas fa-search"></i></button>
+          </div>
+          <div class="cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h2>Descubra seus próximos livros favoritos</h2>
+          <p>Publicações de qualidade para transformar sua vida</p>
+          <a href="#livros" class="btn">Explorar Catálogo</a>
+        </div>
+      </section>
+
+      <section id="destaques" class="featured">
+        <h2>Destaques</h2>
+        <div class="books-grid" id="featured-books">
+          <!-- Livros serão inseridos via JavaScript -->
+        </div>
+      </section>
+
+      <section id="livros" class="catalog">
+        <h2>Nossos Livros</h2>
+        <div class="filter-options">
+          <label for="category-filter">Filtrar por Categoria:</label>
+          <select id="category-filter">
+            <option value="all">Todas as Categorias</option>
+            <option value="negocios">Negócios</option>
+            <option value="autoajuda">Autoajuda</option>
+            <option value="ficcao">Ficção</option>
+          </select>
+          <label for="sort-by">Ordenar por:</label>
+          <select id="sort-by">
+            <option value="recent">Mais Recentes</option>
+            <option value="popular">Mais Populares</option>
+            <option value="price-asc">Preço: Menor para Maior</option>
+            <option value="price-desc">Preço: Maior para Menor</option>
+          </select>
+        </div>
+        <div class="books-grid" id="all-books">
+          <!-- Livros serão inseridos via JavaScript -->
+        </div>
+      </section>
+
+      <section id="autores" class="authors">
+        <h2>Nossos Autores</h2>
+        <div class="authors-grid">
+          <!-- Autores serão inseridos via JavaScript -->
+        </div>
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="about-content">
+          <h2>Sobre a Editora</h2>
+          <p>
+            Fundada em 2025, nossa editora tem como missão publicar conteúdos de
+            qualidade que inspirem e transformem vidas. Acreditamos no poder dos
+            livros para mudar perspectivas e impulsionar o crescimento pessoal e
+            profissional.
+          </p>
+          <p>
+            Nossa equipe é composta por apaixonados por literatura que buscam
+            constantemente novas vozes e ideias inovadoras para compartilhar com
+            nossos leitores.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="./assets/image/equipe.png" alt="Equipe da Editora" />
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Seu Nome" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Seu E-mail" required />
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder="Assunto" />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              placeholder="Sua Mensagem"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Minha Editora</h3>
+          <p>Publicações de qualidade para transformar sua vida.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Links Úteis</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#livros">Livros</a></li>
+            <li><a href="#autores">Autores</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Rua dos Livros, 123 - São
+            Paulo/SP
+          </p>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@minhaeditora.com.br</p>
+        </div>
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Minha Editora. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
